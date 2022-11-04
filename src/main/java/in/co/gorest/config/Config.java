@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.jackson.JacksonConverterFactory;
@@ -23,6 +25,11 @@ public class Config {
                 .client(httpClient.build())
                 .build();
     }
+
+//    @Bean
+//    public BCryptPasswordEncoder  bCryptPasswordEncoder(){
+//        return new BCryptPasswordEncoder();
+//    }
 
 
 }
