@@ -29,7 +29,7 @@ public class CommentController {
     @GetMapping(value = "/{postId}")
     public ResponseEntity<List<CommentDto>> getPostComments(@PathVariable("postId") Integer postId) throws Exception {
 
-        List<CommentDto> comments = commentService.getComments();
+        List<CommentDto> comments = commentService.getPostComments(postId);
         return ResponseEntity.ok().body(comments);
     }
 }
