@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "7e5a9da8-c191-42c8-b442-770c245e1de7",
+		"name": "gorestapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/gorestapp/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"gorestapp",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/gorestapp/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"gorestapp",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/gorestapp/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"gorestapp",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/gorestapp/posts/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"gorestapp",
+						"posts",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/gorestapp/comments/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"gorestapp",
+						"comments",
+						"19"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
