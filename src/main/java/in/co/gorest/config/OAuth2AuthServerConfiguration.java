@@ -41,7 +41,7 @@ public class OAuth2AuthServerConfiguration extends AuthorizationServerConfigurer
         clients
                 .inMemory()
                 .withClient(clientID)
-                .secret(passwordEncoder.encode(clientSecret))
+                .secret(passwordEncoder.encode("{bcrypt}" + clientSecret))
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token")
                 .scopes("user_info")
                 .authorities("READ_ONLY_CLIENT")
