@@ -1,4 +1,4 @@
-package in.co.gorest.config.oauth2;
+package in.co.gorest.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
